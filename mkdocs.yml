@@ -2,42 +2,118 @@ site_name: EmptyCup 3D
 site_url: https://learn.emptycup3d.com/
 
 
+nav:
+- Home:
+  - index.md
+
+- Tutorials:
+  - tutorials/index.md
+
+- Courses: courses/index.md
+
+- Community: community/index.md
+
 theme:
   name: material
-  logo: ecbw.png
+  logo: assets/images/ecbw.png
+  favicon: assets/images/ecbw.png
+
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: red
+    toggle:
+      icon: material/weather-night
+      name: Switch to system preference
+
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: blue grey
+    accent: red
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+
   features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+
     - navigation.instant
-  #   - navigation.tabs
-  #   - navigation.tabs.sticky
-  #   - navigation.tracking
+    - navigation.instant.prefetch
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - header.autohide
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - tables # For adding tables in the documentation
+
+# Attribute lists
+  - attr_list
+  - md_in_html
+
+# Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+# This installs diagrams
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+# Content tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+
+## More readable anchor tags
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+extra_css:
+  - global.css
 
 
-nav:
-  - Drawing floorplan: floorplan.md
-  - Placing furniture: furniture.md
-  - Changing materials: materials.md
-  - Creating woodwork: woodworks.md
-  - Rendering: renders.md
-  - Exporting: exports.md
+plugins:
+  - glightbox
+  - search
 
-copyright: Copyright &copy 2020 - 2022 EmptyCup Innovation Private Limited
+copyright: Copyright &copy 2020 - 2024 EmptyCup Innovation Private Limited
 extra:
   generator: false
   social:
-    - icon: fontawesome/brands/facebook
-      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@emptycuphq
     - icon: fontawesome/brands/instagram
-      link: https://twitter.com/squidfunk
+      link: https://www.instagram.com/emptycuphq/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/EmptyCupHQ/
     - icon: fontawesome/brands/medium
       link: https://twitter.com/squidfunk
     - icon: fontawesome/brands/github
-      link: https://twitter.com/squidfunk
+      link: https://github.com/EmptyCupHQ
+
+
