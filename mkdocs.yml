@@ -8,6 +8,14 @@ nav:
 
 - Tutorials:
   - tutorials/index.md
+  - tutorials/3d.md
+  - tutorials/floorplan.md
+  - tutorials/furniture.md
+  - tutorials/materials.md
+  - tutorials/woodworks.md
+  - tutorials/renders.md
+  - tutorials/exports.md
+  - tutorials/sharing.md
 
 - Courses: courses/index.md
 
@@ -34,7 +42,8 @@ theme:
 
   - media: "(prefers-color-scheme: light)"
     scheme: default
-    primary: brown
+    primary: indigo
+    logo: assets/images/logo-bw.png
     accent: red
     toggle:
       icon: material/weather-night
