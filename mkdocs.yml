@@ -15,29 +15,30 @@ nav:
 
 theme:
   name: material
-  logo: assets/images/ecbw.png
-  favicon: assets/images/ecbw.png
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
 
   icon:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
 
   palette:
+
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
-    primary: black
-    accent: red
-    toggle:
-      icon: material/weather-night
-      name: Switch to system preference
-
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: blue grey
+    primary: brown
     accent: red
     toggle:
       icon: material/weather-sunny
-      name: Switch to dark mode
+      name: Switch to day mode
+
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: brown
+    accent: red
+    toggle:
+      icon: material/weather-night
+      name: Switch to night mode
 
   features:
     - content.action.edit
@@ -101,7 +102,7 @@ plugins:
   - glightbox
   - search
 
-copyright: Copyright &copy 2020 - 2024 EmptyCup Innovation Private Limited
+copyright: Copyright &copy 2020 - 2025 EmptyCup Innovation Private Limited
 extra:
   generator: false
   social:
