@@ -20,6 +20,8 @@ nav:
 
 - Community: community/index.md
 
+- Updates: updates/index.md
+
 theme:
   name: material
   logo: assets/images/logo.png
