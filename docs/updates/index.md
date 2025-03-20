@@ -1,5 +1,25 @@
 # Changelog
 
+### **March 20, 2025**
+1. Set a combined door model for custom woodwork doors
+    - Users can now set a door model for the entire section.
+
+2. Implemented: Utility for removing skirts of partitioned boxes.
+    - Skirts of already partitioned boxes can be removed via shortcut
+      or the toggle button.
+
+3. Fixed: Variable height walls showing strip over the shorter of the intersecting walls.
+
+4. Show only 'in progress' renders.
+    - In the render reel, only last 1 hour renders and renders which are currently in
+      progress are shown.
+    - In progress: queued/started/pending.
+
+5. Added more woodworks.
+    - Added multipurpose, partition, paneling.
+    - Added PoP option in woodworks page.
+
+
 ### **March 07, 2025**
 
 1. Extended status for furnishings in modular and added active updates
