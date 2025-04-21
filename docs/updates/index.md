@@ -1,5 +1,25 @@
 # Changelog
 
+### **April 21, 2025**
+1. Optimize the render pools for cost and response time
+    - Time taken by preview renders is reduced by 20-30%.
+2. Enabled negative values for offset input.
+    - Users can now input negative values while creating guidelines.
+3. Added laminate patterns in 2D drawings
+    - 2D drawings also includes laminates patterns for custom doors.
+4. Implemented: Apply palette should also include house and woodworks
+    - Palettes are now applicable on house and woodworks too.
+5. Implemented: Feature to extract palette from themes.
+6. Implemented: smart scaling of woodwork designs
+    - Users will now be able to scale already customized woodwork designs in
+      layout planner.
+7. Reordered furnishings and materials
+    - Furnishings are now sorted based on their score.
+8. Implemented support to change theme
+    - Users can now apply any palette from the palette gallery.
+    - Only enabled for furnishings.
+
+
 ### **April 7, 2025**
 1. Fixed: Unable to apply material on walls in 3D.
 2. Enabled Gyroscope for render tours and 360 renders
